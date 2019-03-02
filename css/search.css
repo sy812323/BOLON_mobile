@@ -1,0 +1,327 @@
+@charset "utf-8";
+/*css document*/
+body,p,dl,dd,ul,ol,li,div,h1,h2,h3,h4,h5,h6,form,input,table,tr,td{
+    margin:0;
+    padding:0;
+}
+html{
+    font-size: 26.67vw;
+    height: 100%;
+}
+body{
+    font-family: "微软雅黑",Arial;
+    background: #ffffff;
+    height: 100%;
+    display: -webkit-flex;
+    -webkit-flex-direction:column;
+}
+ul,ol{
+    list-style:none;
+}
+img{
+    border:0;
+    display: block;
+}
+a{
+    text-decoration: none;
+    display: block;
+    color: #333333;
+}
+span{
+    display: block;
+}
+h3{
+    font-weight: normal;
+}
+/*header*/
+header{
+    width: 100%;
+    height: .79rem;
+    position: relative;
+}
+.h_top{
+    width: 100%;
+    height: .28rem;
+    background: #f1f1f1;
+    font-size: 12px;
+    color: #333333;
+    text-align: center;
+    line-height: .28rem;
+    border-bottom: 1px solid #999999;
+}
+.h_bot{
+    width: 100%;
+    height: .51rem;
+    background: #fff;
+    display: -webkit-flex;
+    -webkit-align-items:center;
+    -webkit-justify-content:space-between;
+    padding-left: .14rem;
+    padding-right: .14rem;
+    box-sizing: border-box;
+}
+.logo img{
+    width: 1.12rem;
+    height: .2rem;
+}
+.h_bot_left{
+    /*height: .51rem;*/
+    /*width: .52rem;*/
+    display: -webkit-flex;
+}
+.left_list{
+    width: .21rem;
+    height: .16rem;
+    background: url(../img/c.png) no-repeat center;
+    background-size: 100%;
+    margin-right: .14rem;
+}
+.left_search{
+    width: .17rem;
+    height: .15rem;
+    background: url(../img/fang.png) no-repeat center;
+    background-size: 100%;
+}
+.h_bot_right{
+    /*width: .61rem;*/
+    /*height: .52rem;*/
+    display: -webkit-flex;
+}
+.login{
+    width: .16rem;
+    height: .2rem;
+    background: url(../img/user.png) no-repeat center;
+    background-size: 100%;
+}
+.shopCar{
+    width:.14rem;
+    height: .2rem;
+    background: url(../img/cart_bag.png) no-repeat left;
+    background-size: 100%;
+    margin-left: .15rem;
+}
+.count{
+    font-size: 12px;
+    color: #333333;
+    margin-left: .09rem;
+}
+.hide_list{
+    width: 76%;
+    padding-right: 24%;
+    /*background: #000000;*/
+    /*position: absolute;*/
+    top: 78px;
+    left: 0;
+    z-index: 999;
+    display: none;
+    overflow-y: auto;
+    position: fixed;
+}
+.head_list{
+    padding-bottom: 8%;
+    background: #f2f2f2;
+}
+.head_list_title{
+    font-size:.15rem ;
+    text-indent: 8%;
+    width: 100%;
+    height: .47rem;
+    background: #ffffff;
+    line-height: .47rem;
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    -webkit-align-items: center;
+    border-bottom: 1px solid #f2f2f2;
+}
+.head_list_click{
+    width: .12rem;
+    height: .12rem;
+    background: url("../img/wap1.png") no-repeat center;
+    background-size: 100%;
+    margin-right: .23rem;
+}
+.head_list_list{
+    padding: 4% 0;
+    border-bottom: 1px solid #f2f2f2;
+    background: #ffffff;
+    display: none;
+}
+.head_list_list a{
+    font-size: 12px;
+    line-height: .26rem;
+    text-indent: 13.5%;
+    opacity: .8;
+}
+.head_list2{
+    background: #ffffff;
+    padding-top: .33rem;
+}
+.head_list span{
+    font-size: .15rem;
+    text-indent: 8%;
+    line-height: .4rem;
+    height: .4rem;
+    border-bottom: 1px solid #f2f2f2;
+}
+#yu{
+    background: url("../img/arrow_up.png") no-repeat center;
+    background-position-x:92% ;
+    background-size: 10px;
+}
+.yu_list{
+    padding: 4% 0;
+    border-bottom: 1px solid #f2f2f2;
+    display: none;
+}
+.yu_list a{
+    font-size: .14rem;
+    line-height:.26rem ;
+    text-indent: 13%;
+}
+.content{
+    overflow-y:auto;
+    overflow-x: hidden;
+}
+/*search*/
+.search{
+    padding-bottom: 30px;
+    position: relative;
+}
+.search_main{
+    background: #f8f8f8;
+    height:.4rem ;
+    line-height: .4rem;
+    position: relative;
+}
+.search_main input{
+    height: .4rem;
+    text-indent: 5%;
+    font-size: .13rem;
+    outline: none;
+    border: none;
+    display: block;
+    width: 100%;
+    background: none;
+}
+.search_main a{
+    font-size: 12px;
+    position: absolute;
+    right: 4%;
+    top: 0;
+    width: .37rem;
+    height: .18rem;
+    padding: 0 2px;
+    margin-top: 10px;
+    border: 1px solid #000000;
+    line-height: .18rem;
+    text-align: center;
+}
+/*footer*/
+footer{
+    text-align: center;
+}
+.footer_main{
+    width: 94%;
+    margin-left: 3%;
+    margin-top:6%;
+}
+.footer_title{
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    height: .38rem;
+    font-size: .16rem;
+    color: #333333;
+    line-height: .38rem;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+.main_top_word{
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    padding: 0 27%;
+}
+.main_top_word1{
+    padding: 0 7%;
+}
+.main_top_word a{
+    font-size: .13rem;
+    color: #666666;
+    line-height: .26rem;
+    height: .26rem;
+}
+.share{
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    -webkit-align-items: center;
+    padding: 0 13%;
+    height: .36rem;
+    margin-bottom: .3rem;
+}
+.share a img{
+    width: .26rem;
+    height: .21rem;
+}
+.share a:last-of-type img{
+    width: .2rem;
+    height: .2rem;
+}
+.footer_search span{
+    font-size: .15rem;
+    color: #333333;
+    line-height: .4rem;
+    height: .4rem;
+    text-align: center;
+}
+.footer_search input{
+    outline: none;
+    width: 90%;
+    height: .36rem;
+    background: #eeeeee;
+    text-indent: .19rem;
+    font-size: .13rem;
+    line-height: .36rem;
+    /*color: #b1b6b9;*/
+    border: 0 none;
+}
+.footer_search_main{
+    display: -webkit-flex;
+}
+.footer_search a{
+    width: 10%;
+    height: .36rem;
+    background: url("../img/wap_jiao.png") no-repeat center;
+    background-color: #d2d2d2;
+    background-size: .09rem .15rem;
+}
+.footer_se_sp{
+    height: .58rem;
+    line-height: .58rem;
+}
+.footer_search .country{
+    background: #eeeeee url("../img/location.png") no-repeat center;
+    background-position-x: .19rem;
+    background-size: .1rem .14rem;
+    text-indent: .36rem;
+}
+.footer_top{
+    background: url("../img/wap_jiao2.png") no-repeat center;
+    background-size: .16rem .11rem;
+    font-size: .14rem;
+    color: #333333;
+    border-bottom: 1px solid #515151;
+    height: .88rem;
+    background-position-y: 23px;
+    line-height: 1.05rem;
+}
+.footer_logo{
+    width: 30%;
+    margin: 0 auto;
+    opacity: .6;
+}
+.footer_bot{
+    font-size: 12px;
+    color: #666666;
+    text-align: center;
+    margin-bottom: 6%;
+}
