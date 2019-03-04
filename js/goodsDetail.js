@@ -93,6 +93,24 @@ $(function(){
                 dds[i].style.display="none";
             }
             dds[currIndex].style.display="block";
+            //点击切换镜片颜色
+            let ps=$(".jingpian p");
+            for(let i=0;i<ps.length;i++){
+                ps[i].style.display="none";
+            }
+            ps[currIndex].style.display="block";
+            //点击切换型号名称
+            let h3s=$(".goods_name");
+            for(let i=0;i<h3s.length;i++){
+                h3s[i].style.display="none";
+            }
+            h3s[currIndex].style.display="block";
+
+            let pss=$(".info_show_jingpian");
+            for(let i=0;i<pss.length;i++){
+                pss[i].style.display="none";
+            }
+            pss[currIndex].style.display="block";
             // let imgs=$(".list_img dd:visible img");
             // // console.log(imgs.length);
             // for(let i=0;i<imgs.length;i++){
@@ -105,26 +123,53 @@ $(function(){
             //     uls[i].style.backgroundColor="white";
             // }
             // uls[0].style.backgroundColor="gray";
-            // let h3s=$(".xq_right_tit h3");
-            // for(let i=0;i<h3s.length;i++){
-            //     h3s[i].style.display="none";
-            // }
-            // h3s[currIndex].style.display="block";
-            // let ps=$(".jingpian p");
-            // for(let i=0;i<ps.length;i++){
-            //     ps[i].style.display="none";
-            // }
-            // ps[currIndex].style.display="block";
             // let spans=$(".rmb span");
             // for(let i=0;i<spans.length;i++){
             //     spans[i].style.display="none";
             // }
             // spans[currIndex].style.display="inline-block";
-            // let pss=$(".xq_xx2_pian");
-            // for(let i=0;i<pss.length;i++){
-            //     pss[i].style.display="none";
-            // }
-            // pss[currIndex].style.display="block";
+
+        }
+    });
+});
+$(function(){
+   $(".info_show1 h3").click(function(){
+       if($(".info_show1 h3").hasClass("h3_back")){
+           $(".info_show1 h3").removeClass("h3_back");
+           $(".info_show1 div").css("display","none");
+       }else{
+           $(".info_show1 h3").addClass("h3_back");
+           $(".info_show2 h3").removeClass("h3_back");
+           $(".info_show3 h3").removeClass("h3_back");
+           $(".info_show1 div").css("display","block");
+           $(".info_show2 div").css("display","none");
+           $(".info_show3 div").css("display","none");
+       }
+   });
+    $(".info_show2 h3").click(function(){
+        if($(".info_show2 h3").hasClass("h3_back")){
+            $(".info_show2 h3").removeClass("h3_back");
+            $(".info_show2 div").css("display","none");
+        }else{
+            $(".info_show2 h3").addClass("h3_back");
+            $(".info_show1 h3").removeClass("h3_back");
+            $(".info_show3 h3").removeClass("h3_back");
+            $(".info_show2 div").css("display","block");
+            $(".info_show1 div").css("display","none");
+            $(".info_show3 div").css("display","none");
+        }
+    });
+    $(".info_show3 h3").click(function(){
+        if($(".info_show3 h3").hasClass("h3_back")){
+            $(".info_show3 h3").removeClass("h3_back");
+            $(".info_show3 div").css("display","none");
+        }else{
+            $(".info_show3 h3").addClass("h3_back");
+            $(".info_show2 h3").removeClass("h3_back");
+            $(".info_show1 h3").removeClass("h3_back");
+            $(".info_show3 div").css("display","block");
+            $(".info_show2 div").css("display","none");
+            $(".info_show1 div").css("display","none");
         }
     });
 });
