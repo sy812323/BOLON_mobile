@@ -224,6 +224,10 @@ header{
     width: .15rem;
     margin-bottom: .05rem;
 }
+.return_dui{
+    background:#ffffff url("../img/dui1.png") no-repeat center !important;
+    background-size: 100% !important;
+}
 .list_left img{
     width: .9rem;
     height: .6rem;
