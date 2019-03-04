@@ -183,7 +183,151 @@ header{
     overflow-x: hidden;
     border-top: 1px solid #000000;
 }
-
+/*wrapper*/
+.wrapper{
+    border-top: 1px solid #000000;
+    padding-bottom: .3rem;
+}
+.wrapper_main{
+    width: 94%;
+    padding: 0 3%;
+}
+.main_title{
+    margin-bottom: 3%;
+    margin-top: 6%;
+}
+.m_t_num{
+    font-size: .09rem;
+}
+.m_t_num span{
+    font-size: .09rem;
+    display: inline-block;
+}
+.con_con{
+    background: #f5f5f5;
+    padding-bottom: .11rem;
+    width: 100%;
+}
+.goods_list{
+    border-bottom: 1px solid #c4c4c4;
+    padding: 4% 3%;
+    width: 94%;
+    display: -webkit-flex;
+}
+.list_left{
+    margin-right: .1rem;
+}
+.list_left a{
+    border: 1px solid #dddddd;
+    background: #ffffff;
+    height: .15rem;
+    width: .15rem;
+    margin-bottom: .05rem;
+}
+.list_left img{
+    width: .9rem;
+    height: .6rem;
+}
+.list_center{
+    margin-right: .23rem;
+    width: 1.26rem;
+}
+.list_center h3{
+    font-size: .09rem;
+    font-weight: normal;
+    line-height: .15rem;
+    margin-bottom: .03rem;
+}
+.list_center p{
+    font-size: .09rem;
+    line-height: .16rem;
+}
+.center_rmb{
+    font-size: .18rem;
+    line-height: .23rem;
+}
+.center_rmb span{
+    display: inline-block;
+}
+.delete{
+    font-size: .08rem;
+    color: red;
+    line-height: .1rem;
+}
+.list_right span{
+    font-size: .09rem;
+    line-height: .2rem;
+    margin-bottom: 5%;
+}
+.right_num{
+    display: -webkit-flex;
+}
+.right_num_left{
+    font-size: .32rem;
+    line-height: .23rem;
+    width: .24rem;
+    text-align: center;
+}
+.right_num_right{
+    font-size: .2rem;
+    line-height: .23rem;
+    width: .24rem;
+    text-align: center;
+}
+.right_num_center{
+    border: 1px solid #e8e8e8;
+    background: #ffffff;
+    height: .14rem;
+    text-align: center;
+    width: .3rem;
+    padding-top: .03rem;
+    margin-top: .03rem;
+}
+.pay{
+    font-size: .16rem;
+    background: #000;
+    height: .4rem;
+    line-height: .4rem;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    margin: .21rem 0;
+}
+.con_total{
+    width: 100%;
+}
+.total_con{
+    padding: 5% 0;
+}
+.quanxuan a{
+    width: .15rem;
+    height: .15rem;
+    border: 1px solid #dddddd;
+    margin-left: .1rem;
+    margin-right: .05rem;
+    float: left;
+    background: #ffffff;
+}
+.quanxuan span{
+    font-size: .09rem;
+}
+.zongji{
+    width: 100%;
+    overflow: hidden;
+}
+.zongji_main{
+    float: right;
+    margin-right: .11rem;
+}
+.zongji_title{
+    font-size: .12rem;
+}
+.zongji_rmb{
+    font-size:.14rem ;
+}
+.zongji_rmb span{
+    display: inline-block;
+}
 /*footer*/
 footer{
     text-align: center;
